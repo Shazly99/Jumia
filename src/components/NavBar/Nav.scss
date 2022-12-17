@@ -1,0 +1,62 @@
+@import '../../style/varibale';
+
+nav {
+    background-color: #fff !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+
+.navbar-brand {
+    img {
+        width: 138px;
+        height: 24px;
+    }
+}
+.nav-link{
+    font-size: 1.3rem !important;
+}
+.active{
+    color:  $mainBg2 !important;
+    font-weight: 600
+}
+.btn__auth {
+    @include flex(flex, center, center, row);
+
+    .btn__bg {
+        transition: all 0.5s !important;
+        background-color: $mainBg !important;
+        border: none !important;
+        border-radius: 4px !important;
+        box-shadow: $shadow ;
+        color: $lightColor ;
+        text-transform: capitalize;
+
+        &:hover {
+            color: $lightColor ;
+            box-shadow: none;
+            background-color: rgba($color: $mainBg, $alpha: 0.9) !important;
+
+        }
+    }
+
+}
+
+.app__navbar-cart {
+    transition: all 0.5s !important;
+    color: #333;
+    font-size: 1.5rem !important;
+    text-decoration: none;
+
+    >span:first-child {
+        font-size: 1rem;
+    }
+
+    &:hover {
+        color: $mainBg;
+    }
+}
+
+.bg-cart {
+    background-color: red !important;
+
+}

@@ -1,0 +1,121 @@
+@import '../../style/varibale';
+
+.app__home {
+    // height: calc(100vh - 90px);
+    margin-bottom: 100px;
+}
+
+.app__home-h1 {
+    --tw-text-opacity: 1;
+    color: rgba($color: #000000, $alpha: 0.9);
+    font-weight: 500;
+    font-size: 2rem;
+    margin: auto;
+    width: fit-content;
+
+    &::before {
+        content: '';
+        line-height: 4px;
+        margin-left: calc(50% - 20px);
+        border-radius: 0.125rem;
+        --tw-bg-opacity: 1;
+        background-color: rgba(245, 82, 3, var(--tw-bg-opacity));
+        margin-bottom: 0.75rem;
+        display: block;
+        height: 0.25rem;
+        width: 2.5rem;
+    }
+}
+
+.app__home-img {
+    border-top-right-radius: 1.875rem;
+    border-bottom-left-radius: 1.875rem;
+}
+
+.app__home-left-h1 {
+    font-size: 80px;
+    font-weight: 400;
+    font-family: $font;
+}
+
+
+.app__home-left-h2 {
+    padding: 15px 0;
+    font-size: 22px;
+}
+
+@media screen and (max-width:1200px) {
+    .app__home-img {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-top: 10px;
+    }
+}
+
+.app__home-typed {
+    color: $mainBg2;
+}
+
+
+.app__home__digital {
+    padding-bottom: 0;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 240, 232, var(--tw-bg-opacity));
+
+    .app__home__digital-h1 {
+        padding-top: 50px;
+        font-size: 48px;
+    }
+
+    .app__home__digital-p {
+        padding: 15px 5px 15px 0;
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: $font;
+        font-weight: 400;
+    }
+}
+
+.app__home__people {
+    margin-top: 100px;
+
+    .app__home__people-img {
+        @media screen and (max-width:720px) {
+            width: 594px;
+            height: 345px
+        }
+
+        @media screen and (max-width:600px) {
+            width: 494px;
+            height: 245px
+        }
+
+        @media screen and (max-width:400px) {
+            width: 294px;
+            height: 145px
+        }
+    }
+
+    .app__home__people-p {
+        @media screen and (max-width:767px) {
+            width: 100% !important;
+        }
+    }
+}
+
+.overlay-img {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width:767px) {
+
+        font-size: 2rem !important;
+    }
+}

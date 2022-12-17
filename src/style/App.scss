@@ -1,0 +1,19 @@
+@import './varibale';
+
+.btn__bg {
+    transition: all 0.5s !important;
+    background-color: $mainBg2 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    box-shadow: $shadow ;
+    color: $lightColor !important;
+    text-transform: capitalize;
+    font-size: 16px;
+    padding: 0.75rem 1.5rem !important;
+    font-weight:500 !important;
+    &:hover {
+        color: $lightColor ;
+        box-shadow: none;
+        background-color: rgba($color: $mainBg2, $alpha: 0.9) !important;
+    }
+}
