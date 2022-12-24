@@ -1,0 +1,32 @@
+@import '../../style/varibale';
+.app__footer{
+    background-color: #282828;
+    padding-top: 4rem;
+
+    padding-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+
+.app__footer-contant {
+    h5{
+        cursor: pointer;
+        margin-bottom: 20px;
+        &:hover{
+            color: $mainBg2 !important;
+        }
+    }
+    ul {
+        
+        padding-left: 0;
+        li{
+            margin:9px 0;
+            list-style: none;
+            color: #ECECEC;
+            cursor: pointer;
+            &:hover{
+                color: $mainBg2;
+            }
+        }
+    }
+}

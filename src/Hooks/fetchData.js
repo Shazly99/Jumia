@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const GameOptions = {
+export const ShoppingOptions = {
     method: 'GET', 
     headers: {
       'X-RapidAPI-Key': '4eb60ccce0msh9422e2902346130p1849cfjsnb8cab4cc95a1',
@@ -9,10 +9,7 @@ export const GameOptions = {
   };
 
   
- export const fetchData= async(url,options)=>{
-    let {data}=await axios.get(url,options);
-    return data;
-  }
+
 
   /**
   

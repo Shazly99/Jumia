@@ -1,0 +1,38 @@
+@import '../../style/varibale';
+
+.app__bgProdect-left{
+    height: 220px;
+}
+
+ 
+
+// img{
+//     cursor: pointer;
+//     overflow: hidden;
+//     transition: all 0.5s;
+//     &:hover{
+//         box-shadow: 0 0 10px #ddd !important; 
+//     }
+// }
+
+.slick-prev:before, .slick-next:before {
+color: $mainBg !important; 
+}
+ 
+
+.app__slider-price{
+    margin-top: 0;
+    margin-left: 16px;
+    color: $mainBg  ;
+    background-color: #FEEFDE;
+    padding: 1px 26px;
+}
+
+.app__slider-card{
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover{
+        border-radius: 5px !important;
+        box-shadow: 0 0 10px rgba(33, 32, 32, 0.534);
+    }
+}

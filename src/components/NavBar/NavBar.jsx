@@ -11,7 +11,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 function NavBar() {
   return (
     <>
-      <Navbar className='app__navbar' expand="lg">
+      <Navbar  className='app__navbar position-fixed top-0 w-100 ' expand="lg">
         <Container fluid="md" >
           <Navbar.Brand href="#">
             <img src={icon} />
@@ -29,6 +29,10 @@ function NavBar() {
 
               <LinkContainer to={'/Products'}>
               <Nav.Link  >Products</Nav.Link>
+              </LinkContainer>
+
+              <LinkContainer to={'/Contact'}>
+              <Nav.Link  >Contact Us</Nav.Link>
               </LinkContainer>
 
             </Nav>

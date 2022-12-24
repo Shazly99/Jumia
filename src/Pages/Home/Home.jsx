@@ -8,7 +8,7 @@ import HomePage from './HomePage';
 
 function Home() {
     return (
-        <>
+        <div className='overflow-hidden'>
             <Container fluid='md'>
                 <Com.HomePage />
             </Container>
@@ -21,10 +21,10 @@ function Home() {
                 <Com.People/>
             </div>
 
-            <div className="app__home__news">
+            <div className="app__home__news ">
                 <Com.News/>
             </div>
-        </>
+        </div>
     )
 }
 

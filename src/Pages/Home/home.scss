@@ -119,3 +119,28 @@
         font-size: 2rem !important;
     }
 }
+
+.news__card{
+    width: 100%;
+    @include flex(flex,space-between,center,row);
+    cursor: pointer;
+    &:hover{
+        .news__card__icon{
+            color: #000000;
+        }
+    }
+    h3{
+        font-size: 24px;
+    }
+    .news__card__icon{
+        transition: all 0.5s;
+        color: $mainBg2;
+        font-size: 2rem;
+        font-weight: bolder !important;
+    }
+    .news__card-h3{
+        @media screen and (max-width:767px) {
+            font-size: 16px !important;
+        }
+    }
+}

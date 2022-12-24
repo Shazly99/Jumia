@@ -1,0 +1,14 @@
+@import '../../style/varibale';
+
+
+.app__contact-textarea{
+    padding: 15px;
+    border-color: rgba($color: #000000, $alpha: 0.2);
+    border-radius: 8px;
+    outline-color: $mainBg2;
+    background-color: transparent;
+    &:hover{
+    border-color: rgba($color: #000000, $alpha: 0.9);
+        
+    }
+}

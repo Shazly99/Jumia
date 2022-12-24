@@ -1,35 +1,34 @@
-import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Col, Row } from 'react-bootstrap'
-import { fetchData } from '../../Hooks/fetchData'
+import { Col, Container, Row } from 'react-bootstrap'
+import Component from '../../constants/Component';
+import useFetch from './../../Hooks/useFetch';
 import './Products.scss'
-import { GameOptions } from './../../Hooks/fetchData';
 function Products() {
-  const [data, setData] = useState('')
+  // const [products, setProduct] = useState('')
+  let { product } = useFetch('https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/list')
 
-  async function get() {
-    let data = await fetchData(`https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/list`, GameOptions); 
-    console.log(data.results      );
-  }
 
-  useEffect(() => {
-    get()
-  }, [])
-
+  console.log(product);
   return (
     <div>
-      <Row>
-        {/* {
-          data && <>
-            {data.map((item, index) => (
-              <Col md={3}>
-                <img src={item.images[1]} className='w-100' alt="" />
-                <span>{item.title}</span>
-              </Col>
-            ))}
-          </>
-        } */}
-      </Row>
+      <Container>
+        <Component.HeaderProduct product={product}/>
+        <Row  className='mt-4'>
+          <h1>Woman's Clothing</h1>
+          {
+            product ? <>
+              {product.map((item, index) => (
+                <Col key={index} md={3}>
+                  <img src={item.galleryImages[2]?.url} className='w-100' alt="" />
+                  <span>{item.name}</span>
+                </Col>
+              ))}
+            </> :
+              <h1>shazloka</h1>
+
+          }
+        </Row>
+      </Container>
 
     </div>
   )
